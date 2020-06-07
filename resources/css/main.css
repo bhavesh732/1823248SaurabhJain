@@ -328,3 +328,132 @@ nav ul {
         height: 80vh;
     }
 }
+
+
+/* about */
+
+#about {
+    padding: 2.5vh;
+    background-color: #fff;
+}
+
+#about h1 {
+    text-align: center;
+    font-family: "Pacifico";
+}
+
+#about p {
+    font-size: large;
+    padding: 5vh;
+}
+
+.strengths .col-sm-3:before {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    bottom: -2px;
+    right: -2px;
+    content: '';
+    transform: skew(2deg, 2deg);
+    background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    z-index: 0;
+}
+
+
+/* 
+.strengths .col-sm-3:after {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    content: '';
+    background-color: black;
+    z-index: 1;
+} */
+
+.strengths {
+    position: relative;
+}
+
+.strengths .col-sm-3 {
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    padding: 0px;
+    z-index: 1;
+    margin: 2vh;
+    max-width: 22.2%;
+}
+
+.strengths .col-sm-3 .content {
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h3 {
+    font-weight: 100;
+    margin: 5px;
+    transition: 1s ease-in-out;
+}
+
+.strengths .col-sm-3:nth-child(1):before {
+    background: linear-gradient(to left, #12c2e9, #f64f59);
+    background: -webkit-linear-gradient(to left, #12c2e9, #f64f59);
+}
+
+.strengths .col-sm-3:nth-child(2):before {
+    background: linear-gradient(to left, orange, red);
+    background: -webkit-linear-gradient(to left, orange, red);
+}
+
+.strengths .col-sm-3:nth-child(3):before {
+    background: linear-gradient(to left, hotpink, yellow);
+    background: -webkit-linear-gradient(to left, hotpink, yellow);
+}
+
+.strengths .col-sm-3:nth-child(4):before {
+    background: linear-gradient(to left, green, red);
+    background: -webkit-linear-gradient(to left, green, red);
+}
+
+.material-icons,
+i {
+    font-size: 70px !important;
+    margin: 0px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.col-sm-3:hover .content .material-icons,
+.col-sm-3:hover .content i,
+.col-sm-3:hover .content h3 {
+    opacity: 1;
+    position: static;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:800px) {
+    .strengths .col-sm-3 {
+        max-width: 100%;
+    }
+    .col-sm-3 .content .material-icons,
+    .col-sm-3 .content i,
+    .col-sm-3 .content h3 {
+        opacity: 1;
+        position: static;
+        transition: 0.5s ease-in-out;
+    }
+}
