@@ -43,6 +43,10 @@ section {
     background-color: white;
 }
 
+section img {
+    height: 9vh;
+}
+
 section a {
     height: fit-content;
     height: -webkit-fit-content;
@@ -288,7 +292,7 @@ nav ul {
         height: 25vh;
     }
     section img {
-        height: 20vh;
+        height: 8vh;
         margin: 2.5vh;
     }
     .navbar.navbar-expand-md.setwidth {
@@ -316,9 +320,17 @@ nav ul {
 
 .parallax {
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
     background-position: center;
+    -moz-background-position: center;
+    -webkit-background-position: center;
     background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
     background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
     margin-top: -10px;
     height: 100vh;
 }
