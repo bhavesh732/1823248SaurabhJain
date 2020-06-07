@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins.ttf');
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url('../fonts/Pacifico.ttf');
+}
+
+* {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    outline: none;
+    z-index: 1;
+}
+
+*:focus,
+*:hover {
+    outline: none !important;
+}
+
+
+/*top logo header*/
+
+section {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    background-color: white;
+}
+
+section a {
+    height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    margin: auto;
+    position: relative;
+}
+
+section h1 {
+    padding: 2.5vh;
+    margin: 2.5vh;
+    font-family: "Pacifico";
+    margin: auto;
+    font-size: xxx-large;
+    color: black;
+}
+
+section h1:after {
+    content: 'Saurabh';
+    left: 100px;
+    top: 16px;
+    position: absolute;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+
+/*end logo header*/
+
+
+/*nav css*/
+
+.navdisplay {
+    top: 2%;
+    display: none;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    outline: none;
+}
+
+.navdisplay:after,
+.navdisplay:before,
+.navdisplay div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5.5px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navhide {
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 60px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navhide:after,
+.navhide:before,
+.navhide div {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 4px 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navhide:before {
+    transform: translateY(9px) rotate(135deg);
+}
+
+.navhide:after {
+    transform: translateY(-10px) rotate(-135deg);
+}
+
+.navhide div {
+    transform: scale(0);
+}
+
+.setwidth {
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+header div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-brand img {
+    height: 3.6vw;
+    width: 4.4vw;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: #102542;
+    z-index: 5;
+    color: #fff;
+}
+
+nav ul li a {
+    margin: 1vw;
+}
+
+button.butt {
+    color: #fff;
+    margin: 2vh 0vh;
+}
+
+nav ul li a button {
+    border: none;
+    padding: 2%;
+    background-color: transparent;
+    font-weight: 500;
+    margin: 2vh 2vh;
+    margin-bottom: 0px;
+}
+
+nav ul li a button:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    margin: auto 0vh;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.social-media {
+    margin-right: auto;
+    display: flex;
+}
+
+.btn-instagram {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-instagram:hover,
+.btn-instagram:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-facebook:hover,
+.btn-facebook:active {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:active {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul li:nth-child(6) {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-a:after {
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin-top: 1vh;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.navbar.navbar-expand-md.setwidth {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:766px) {
+    .navbar-brand {
+        line-height: 0px;
+        height: fit-content;
+        height: -moz-fit-content;
+        height: -webkit-fit-content;
+        margin: 1.5%;
+        margin-right: auto;
+        display: block;
+    }
+    .navbar-brand img {
+        height: 45px;
+        width: 55px;
+    }
+    .navdisplay {
+        display: block;
+        margin: auto 0px;
+    }
+    .setwidth {
+        width: 100%;
+    }
+    section {
+        /* display: none; */
+        height: 25vh;
+    }
+    section img {
+        height: 20vh;
+        margin: 2.5vh;
+    }
+    .navbar.navbar-expand-md.setwidth {
+        padding: 0px;
+        width: 100vw;
+        margin: 0px -30px;
+    }
+    nav ul li:nth-child(6) {
+        display: block;
+        margin: 3%;
+    }
+    nav ul li {
+        text-align: center;
+    }
+    nav ul li a button:hover {
+        transform: none;
+    }
+    #header {
+        padding: 10px;
+    }
+}
