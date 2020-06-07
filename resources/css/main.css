@@ -29,6 +29,10 @@
     outline: none !important;
 }
 
+body {
+    background-color: black;
+}
+
 
 /*top logo header*/
 
@@ -158,9 +162,10 @@ header div.container {
 header {
     position: sticky;
     top: 0px;
-    background-color: #102542;
+    background-color: black;
     z-index: 5;
     color: #fff;
+    box-shadow: 0px 2px #fff;
 }
 
 nav ul li a {
@@ -303,5 +308,23 @@ nav ul {
     }
     #header {
         padding: 10px;
+    }
+}
+
+
+/* parallax */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -10px;
+    height: 100vh;
+}
+
+@media screen and (max-width:766px) {
+    .parallax {
+        height: 80vh;
     }
 }
