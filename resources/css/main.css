@@ -37,10 +37,9 @@ body {
 /*top logo header*/
 
 section {
-    height: 30vh;
     text-align: center;
     display: flex;
-    background-color: white;
+    margin: auto;
 }
 
 section img {
@@ -60,17 +59,17 @@ section h1 {
     margin: 2.5vh;
     font-family: "Pacifico";
     margin: auto;
-    font-size: xxx-large;
-    color: black;
+    font-size: 200px;
+    color: white;
 }
 
 section h1:after {
     content: 'Saurabh';
-    left: 100px;
+    left: 50%;
     top: 16px;
     position: absolute;
     font-weight: 400;
-    font-size: x-large;
+    font-size: 100px;
 }
 
 
@@ -240,10 +239,6 @@ nav ul li a button:hover {
     border: none;
 }
 
-nav ul li:nth-child(6) {
-    display: none;
-}
-
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -264,6 +259,22 @@ nav ul {
 
 .navbar.navbar-expand-md.setwidth {
     margin-bottom: 0px;
+}
+
+.special {
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 4px 7px solid lightgrey;
+    margin: 1vh 0px;
+}
+
+.special:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
+    transform: none;
 }
 
 @media screen and (max-width:766px) {
@@ -333,6 +344,22 @@ nav ul {
     -moz-background-size: contain;
     margin-top: -10px;
     height: 100vh;
+    display: flex;
+    background-image: url(../images/logo.jpg);
+}
+
+.parallax section a h1 {
+    text-shadow: 2px 2px #000;
+    color: black;
+}
+
+.parallax2 {
+    background-color: black;
+    background-image: url(../images/logo2.jpg);
+}
+
+.parallax2 section a h1 {
+    color: white;
 }
 
 @media screen and (max-width:766px) {
@@ -359,7 +386,11 @@ nav ul {
     padding: 5vh;
 }
 
-.strengths .col-sm-3:before {
+.strengths .col-sm-6 {
+    display: flex;
+}
+
+.strengths .col-sm-6 .col-sm-12:before {
     position: absolute;
     left: -2px;
     top: -2px;
@@ -372,9 +403,17 @@ nav ul {
     z-index: 0;
 }
 
+.strengths .col-sm-6 {
+    margin: 15px 0;
+}
+
+.row {
+    margin: 0 -30px;
+}
+
 
 /* 
-.strengths .col-sm-3:after {
+.strengths .col-sm-6 .col-sm-12:after {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -389,7 +428,7 @@ nav ul {
     position: relative;
 }
 
-.strengths .col-sm-3 {
+.strengths .col-sm-6 .col-sm-12 {
     position: relative;
     background-color: black;
     display: flex;
@@ -398,11 +437,10 @@ nav ul {
     height: 40vh;
     padding: 0px;
     z-index: 1;
-    margin: 2vh;
-    max-width: 22.2%;
+    /* margin: 2vh; */
 }
 
-.strengths .col-sm-3 .content {
+.strengths .col-sm-6 .col-sm-12 .content {
     position: relative;
     background-color: black;
     display: flex;
@@ -421,53 +459,43 @@ nav ul {
     transition: 1s ease-in-out;
 }
 
-.strengths .col-sm-3:nth-child(1):before {
+.strengths .col-sm-6 .col-sm-12:nth-child(1):before {
     background: linear-gradient(to left, #12c2e9, #f64f59);
     background: -webkit-linear-gradient(to left, #12c2e9, #f64f59);
 }
 
-.strengths .col-sm-3:nth-child(2):before {
+.strengths .col-sm-6 .col-sm-12:nth-child(2):before {
     background: linear-gradient(to left, orange, red);
     background: -webkit-linear-gradient(to left, orange, red);
 }
 
-.strengths .col-sm-3:nth-child(3):before {
+.strengths .col-sm-6 .col-sm-12:nth-child(3):before {
     background: linear-gradient(to left, hotpink, yellow);
     background: -webkit-linear-gradient(to left, hotpink, yellow);
 }
 
-.strengths .col-sm-3:nth-child(4):before {
+.strengths .col-sm-6 .col-sm-12:nth-child(4):before {
     background: linear-gradient(to left, green, red);
     background: -webkit-linear-gradient(to left, green, red);
 }
 
 .material-icons,
 i {
-    font-size: 70px !important;
-    margin: 0px;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
-
-.col-sm-3:hover .content .material-icons,
-.col-sm-3:hover .content i,
-.col-sm-3:hover .content h3 {
-    opacity: 1;
-    position: static;
-    transition: 0.5s ease-in-out;
+    font-size: 100px !important;
+    margin: 3vh;
 }
 
 @media screen and (max-width:800px) {
-    .strengths .col-sm-3 {
+    .strengths .col-sm-6 .col-sm-12 {
         max-width: 100%;
     }
     #about p {
         padding: 15px;
         text-align: justify;
     }
-    .col-sm-3 .content .material-icons,
-    .col-sm-3 .content i,
-    .col-sm-3 .content h3 {
+    .col-sm-6 .col-sm-12 .content .material-icons,
+    .col-sm-6 .col-sm-12 .content i,
+    .col-sm-6 .col-sm-12 .content h3 {
         opacity: 1;
         position: static;
         transition: 0.5s ease-in-out;
