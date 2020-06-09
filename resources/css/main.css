@@ -93,6 +93,7 @@ section h1:after {
     padding-top: 0px;
     padding-bottom: 0px;
     outline: none;
+    margin-right: auto;
 }
 
 .navdisplay:after,
@@ -202,8 +203,8 @@ nav ul li a button:hover {
 }
 
 .social-media {
-    margin-right: auto;
     display: flex;
+    margin-right: auto;
 }
 
 .btn-instagram {
@@ -262,7 +263,8 @@ nav ul {
 }
 
 .special {
-    padding: 5px 20px;
+    padding: 15px 20px;
+    padding-top: 10px;
     border-radius: 50px;
     border: 2px solid white;
     color: white;
@@ -277,7 +279,14 @@ nav ul {
     transform: none;
 }
 
+nav {
+    margin-right: 0;
+}
+
 @media screen and (max-width:766px) {
+    nav {
+        margin-right: auto;
+    }
     .navbar-brand {
         line-height: 0px;
         height: fit-content;
@@ -293,7 +302,6 @@ nav ul {
     }
     .navdisplay {
         display: block;
-        margin: auto 0px;
     }
     .setwidth {
         width: 100%;
@@ -301,6 +309,9 @@ nav ul {
     section {
         /* display: none; */
         height: 25vh;
+    }
+    .social-media {
+        margin-right: 0px;
     }
     section img {
         height: 8vh;
@@ -378,12 +389,15 @@ nav ul {
 
 #about h1,
 #projects h1,
-#prohects h3 {
+#prohects h3,
+#knowus h1,
+#knowus h3 {
     text-align: center;
     font-family: "Pacifico";
 }
 
-#about p {
+#about p,
+#knowus p {
     font-size: large;
     padding: 5vh;
 }
@@ -557,6 +571,7 @@ i {
 #projects .container .container-fluid div {
     font-size: large;
     color: rgba(255, 255, 255, 0.8);
+    font-weight: 800;
 }
 
 #projects h3 {
@@ -599,4 +614,47 @@ i {
     #projects .container:nth-child(2) {
         display: none;
     }
+}
+
+
+/* know us */
+
+#knowus.container-fluid {
+    /* height: 100vh; */
+    background-color: #fff;
+}
+
+#knowus h3 {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+
+/* footer */
+
+footer {
+    color: #fff;
+    padding: 15px;
+}
+
+footer p {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+footer .col-sm-12 {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 15px 0px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
 }
