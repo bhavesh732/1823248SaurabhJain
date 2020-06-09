@@ -485,6 +485,10 @@ i {
     margin: 3vh;
 }
 
+.d-none {
+    display: none;
+}
+
 @media screen and (max-width:800px) {
     .strengths .col-sm-6 .col-sm-12 {
         max-width: 100%;
@@ -500,5 +504,11 @@ i {
         position: static;
         transition: 0.5s ease-in-out;
         margin: 1vh;
+    }
+    .d-none {
+        display: block !important;
+    }
+    .strengths .d-none1 {
+        display: none;
     }
 }
